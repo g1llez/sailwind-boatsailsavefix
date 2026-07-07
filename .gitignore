@@ -1,0 +1,17 @@
+# Build output
+bin/
+obj/
+
+# Local / IDE
+.vs/
+*.user
+*.suo
+*.code-workspace
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Thunderstore / release artifacts
+_staging/
+*.zip

@@ -1,0 +1,9 @@
+{
+  "name": "BoatSailSaveFix",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/g1llez/sailwind-boatsailsavefix",
+  "description": "Fixes a vanilla bug where custom boat sails are not written to the save file when masts are inactive in the hierarchy. Affects owned boats left behind while sailing another vessel.",
+  "dependencies": [
+    "BepInEx-BepInExPack-5.4.2305"
+  ]
+}
