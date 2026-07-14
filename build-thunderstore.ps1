@@ -1,9 +1,12 @@
 param(
-    [string]$GameDir = "C:\Program Files (x86)\Steam\steamapps\common\Sailwind"
+    [string]$GameDir = $env:SAILWIND_DIR
 )
 
 $ErrorActionPreference = "Stop"
 $Root = $PSScriptRoot
+if ([string]::IsNullOrWhiteSpace($GameDir)) {
+    $GameDir = Join-Path ${env:ProgramFiles(x86)} "Steam\steamapps\common\Sailwind"
+}
 $Icon = Join-Path $Root "icon.png"
 $DllBuilt = Join-Path $Root "bin\Release\netstandard2.0\BoatSailSaveFix.dll"
 $ZipPath = Join-Path $Root "g1llez-BoatSailSaveFix-1.0.0.zip"

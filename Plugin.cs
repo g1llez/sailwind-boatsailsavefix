@@ -8,7 +8,7 @@ namespace BoatSailSaveFix
     [BepInPlugin(PluginGuid, PluginName, PluginVersion)]
     public sealed class Plugin : BaseUnityPlugin
     {
-        public const string PluginGuid = "gaucl.boatsailsavefix";
+        public const string PluginGuid = "g1llez.boatsailsavefix";
         public const string PluginName = "Boat Sail Save Fix";
         public const string PluginVersion = "1.0.0";
 

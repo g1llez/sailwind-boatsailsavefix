@@ -4,9 +4,15 @@ obj/
 
 # Local / IDE
 .vs/
+.vscode/
+.idea/
 *.user
 *.suo
 *.code-workspace
+.env
+.env.*
+!.env.example
+*.log
 
 # OS
 Thumbs.db

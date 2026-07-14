@@ -44,9 +44,12 @@ Delete the `BoatSailSaveFix` folder from `BepInEx/plugins/`.
 
 From the repository root:
 
-```bash
-dotnet build -c Release -p:SailwindDir="C:/Program Files (x86)/Steam/steamapps/common/Sailwind"
+```powershell
+dotnet build -c Release -p:SailwindDir="$env:SAILWIND_DIR"
 ```
+
+Set `SAILWIND_DIR` to your Sailwind folder. The standard Steam location is
+`%ProgramFiles(x86)%\Steam\steamapps\common\Sailwind`.
 
 Copy `bin/Release/netstandard2.0/BoatSailSaveFix.dll` into `BepInEx/plugins/BoatSailSaveFix/`.
 
